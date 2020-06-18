@@ -23,7 +23,7 @@ def password_():
     password = input('Enter the new password for the new account:')
     password2= input('Re-Enter the new password for the new account:')
     if password==password2:
-        print(stm.create_claimed_account(new_account_name, creator='digital.mine', password=password))
+        print(stm.create_claimed_account(new_account_name, creator='[account creator]', password=password))
         time.sleep(4)
         new_account = Account(new_account_name)
         new_account.print_info()
